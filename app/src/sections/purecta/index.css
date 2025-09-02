@@ -1,0 +1,401 @@
+.purecta-section {
+  background: 
+    linear-gradient(135deg, #28282B 0%, #1a1a1c 50%, #28282B 100%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 25px,
+      rgba(255, 255, 255, 0.02) 25px,
+      rgba(255, 255, 255, 0.02) 26px
+    );
+  padding: 6rem 2rem;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.purecta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(172, 171, 160, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(172, 171, 160, 0.08) 0%, transparent 40%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.purecta-container {
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Override headings styles for white text with industrial precision */
+.purecta-headings .headings-upheadline {
+  color: #ACABA0;
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.purecta-headings .headings-title {
+  color: #ffffff;
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 2.5rem;
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.purecta-headings .headings-subtitle {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Mission Status Indicators - Urgency without being pushy */
+.mission-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 3rem 0 4rem 0;
+  padding: 1.5rem 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(172, 171, 160, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #ACABA0;
+  border-radius: 50%;
+  animation: pulse-status 2s infinite;
+}
+
+@keyframes pulse-status {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+}
+
+.status-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.mission-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progress-bar {
+  width: 120px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 72%;
+  height: 100%;
+  background: linear-gradient(90deg, #ACABA0, #8a8980);
+  border-radius: 2px;
+  animation: progress-glow 3s infinite alternate;
+}
+
+@keyframes progress-glow {
+  0% {
+    box-shadow: 0 0 5px rgba(172, 171, 160, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(172, 171, 160, 0.8);
+  }
+}
+
+.progress-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Enhanced CTA Button */
+.purecta-cta {
+  margin-top: 4rem;
+}
+
+.conquest-button {
+  background: linear-gradient(135deg, #ACABA0 0%, #8a8980 100%) !important;
+  color: white !important;
+  padding: 1.2rem 3rem !important;
+  font-size: 1.1rem !important;
+  font-weight: 900 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  font-family: 'Arial Black', 'Helvetica', sans-serif !important;
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.4),
+    inset 0 1px 2px rgba(255, 255, 255, 0.2) !important;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  min-width: 280px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conquest-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.conquest-button:hover {
+  background: linear-gradient(135deg, #8a8980 0%, #6b6a65 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    inset 0 1px 2px rgba(255, 255, 255, 0.3) !important;
+}
+
+.conquest-button:hover::before {
+  left: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .purecta-section {
+    padding: 5rem 2rem;
+  }
+  
+  .purecta-headings .headings-title {
+    font-size: 2.8rem;
+  }
+  
+  .purecta-headings .headings-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .mission-status {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.2rem 1.5rem;
+  }
+  
+  .conquest-button {
+    min-width: 260px;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .purecta-section {
+    padding: 4rem 1.5rem;
+    min-height: 50vh;
+  }
+  
+  .purecta-headings .headings-title {
+    font-size: 2.4rem;
+  }
+  
+  .purecta-headings .headings-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .purecta-headings .headings-upheadline {
+    font-size: 1rem;
+  }
+  
+  .mission-status {
+    margin: 2rem 0 3rem 0;
+    padding: 1rem;
+  }
+  
+  .status-text, .progress-text {
+    font-size: 0.8rem;
+  }
+  
+  .progress-bar {
+    width: 100px;
+  }
+  
+  .conquest-button {
+    min-width: 240px;
+    padding: 1rem 2.5rem !important;
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .purecta-section {
+    padding: 3rem 1rem;
+  }
+  
+  .purecta-headings .headings-title {
+    font-size: 2rem;
+  }
+  
+  .purecta-headings .headings-subtitle {
+    font-size: 1rem;
+  }
+  
+  .mission-status {
+    gap: 1.5rem;
+    padding: 0.8rem;
+  }
+  
+  .status-text, .progress-text {
+    font-size: 0.75rem;
+  }
+  
+  .progress-bar {
+    width: 80px;
+    height: 3px;
+  }
+  
+  .conquest-button {
+    min-width: 220px;
+    padding: 1rem 2rem !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 1px !important;
+  }
+  
+  .mountain-silhouette {
+    height: 80px;
+    background-size: 100% 100%, 100% 40px;
+  }
+}
+
+/* Industrial Background Elements */
+.technical-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 50px,
+      rgba(172, 171, 160, 0.03) 50px,
+      rgba(172, 171, 160, 0.03) 51px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 50px,
+      rgba(172, 171, 160, 0.03) 50px,
+      rgba(172, 171, 160, 0.03) 51px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.carbon-texture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 2px,
+      rgba(172, 171, 160, 0.02) 2px,
+      rgba(172, 171, 160, 0.02) 4px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 2px,
+      rgba(172, 171, 160, 0.02) 2px,
+      rgba(172, 171, 160, 0.02) 4px
+    );
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.mountain-silhouette {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: 
+    linear-gradient(to right, transparent 0%, rgba(172, 171, 160, 0.1) 50%, transparent 100%),
+    polygon(
+      0% 100%, 
+      15% 60%, 
+      25% 70%, 
+      35% 45%, 
+      50% 55%, 
+      65% 35%, 
+      75% 50%, 
+      85% 40%, 
+      100% 70%, 
+      100% 100%
+    );
+  background-size: 100% 100%, 100% 60px;
+  background-position: 0% 0%, 0% bottom;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.15;
+}

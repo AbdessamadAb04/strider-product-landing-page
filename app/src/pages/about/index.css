@@ -1,0 +1,367 @@
+/* About Page - Simple and clean design matching website styling */
+.about-page {
+  min-height: 100vh;
+  background-color: #EDEDF2;
+}
+
+.about-main {
+  flex: 1;
+}
+
+/* Hero Section */
+.about-hero {
+  background-color: #EDEDF2;
+  padding: 10rem 2rem 4.5rem;
+  text-align: center;
+}
+
+.about-hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #28282B;
+  margin: 0 0 2.5rem 0;
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-subtitle {
+  font-size: 1.3rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Container */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #28282B;
+  margin: 0 0 2rem 0;
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.section-title.centered {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Story Section */
+.about-story {
+  background-color: #ffffff;
+  padding: 6rem 0;
+}
+
+.story-content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.story-text {
+  flex: 1;
+}
+
+.story-paragraph {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0 0 2rem 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: 400;
+}
+
+.story-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.story-image {
+  flex: 0 0 300px;
+}
+
+/* Mission Section */
+.about-mission {
+  background-color: #EDEDF2;
+  padding: 6rem 0;
+}
+
+.mission-content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.mission-image {
+  flex: 0 0 300px;
+}
+
+.mission-text {
+  flex: 1;
+}
+
+.mission-paragraph {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0 0 2rem 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: 400;
+}
+
+.mission-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Values Section */
+.about-values {
+  background-color: #ffffff;
+  padding: 6rem 0;
+}
+
+.values-content {
+  margin-bottom: 3rem;
+}
+
+.values-paragraph {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0 0 2rem 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: 400;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.values-paragraph strong {
+  color: #ACABA0;
+  font-weight: 700;
+}
+
+.values-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.values-image {
+  display: flex;
+  justify-content: center;
+}
+
+/* Image Placeholders */
+.image-placeholder {
+  width: 300px;
+  height: 250px;
+  background: 
+    linear-gradient(135deg, rgba(172, 171, 160, 0.1) 0%, rgba(172, 171, 160, 0.2) 100%),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 15px,
+      rgba(172, 171, 160, 0.05) 15px,
+      rgba(172, 171, 160, 0.05) 16px
+    );
+  border: 2px solid rgba(172, 171, 160, 0.3);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.1),
+    inset 0 1px 2px rgba(255, 255, 255, 0.7);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.image-placeholder.large {
+  width: 400px;
+  height: 300px;
+}
+
+.image-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(172, 171, 160, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(172, 171, 160, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.placeholder-content {
+  color: #ACABA0;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.placeholder-content svg {
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.placeholder-content span {
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-title {
+    font-size: 3rem;
+  }
+  
+  .about-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .story-content,
+  .mission-content {
+    gap: 3rem;
+  }
+  
+  .story-image,
+  .mission-image {
+    flex: 0 0 250px;
+  }
+  
+  .image-placeholder {
+    width: 250px;
+    height: 200px;
+  }
+  
+  .image-placeholder.large {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 6.5rem 2rem 3.5rem;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    margin: 0 0 2rem 0;
+  }
+  
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .about-story,
+  .about-mission,
+  .about-values {
+    padding: 4rem 0;
+  }
+  
+  .story-content,
+  .mission-content {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  
+  .story-image,
+  .mission-image {
+    flex: none;
+    align-self: center;
+  }
+  
+  .story-paragraph,
+  .mission-paragraph,
+  .values-paragraph {
+    font-size: 1rem;
+  }
+  
+  .image-placeholder {
+    width: 280px;
+    height: 220px;
+  }
+  
+  .image-placeholder.large {
+    width: 320px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 4.5rem 1rem 3.5rem;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .about-subtitle {
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .about-container {
+    padding: 0 1rem;
+  }
+  
+  .story-paragraph,
+  .mission-paragraph,
+  .values-paragraph {
+    font-size: 0.95rem;
+  }
+  
+  .image-placeholder {
+    width: 250px;
+    height: 200px;
+  }
+  
+  .image-placeholder.large {
+    width: 280px;
+    height: 220px;
+  }
+  
+  .placeholder-content span {
+    font-size: 0.8rem;
+  }
+}

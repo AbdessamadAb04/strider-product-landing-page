@@ -1,0 +1,250 @@
+.faq-section {
+  background-color: #F5F4F0;
+  padding: 6rem 2rem;
+  min-height: auto;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.faq-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #28282B;
+  margin-bottom: 1rem;
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-subtitle {
+  font-size: 1.1rem;
+  color: #666666;
+  font-weight: 400;
+  margin: 0;
+}
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.faq-question:hover {
+  background-color: rgba(40, 40, 43, 0.02);
+  margin: 0 -1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 4px;
+}
+
+.faq-question-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #28282B;
+  margin: 0;
+  flex: 1;
+  text-align: left;
+  line-height: 1.4;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #28282B;
+  transition: transform 0.3s ease;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-icon.expanded {
+  transform: rotate(0deg);
+}
+
+.faq-answer {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-answer.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.faq-answer.expanded {
+  max-height: 200px;
+  opacity: 1;
+  margin-bottom: 1rem;
+}
+
+.faq-answer-text {
+  padding: 0 0 1rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* Contact Prompt Section */
+.faq-contact-prompt {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem 0;
+}
+
+.faq-contact-title {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #28282B;
+  margin-bottom: 1rem;
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.faq-contact-text {
+  font-size: 1.1rem;
+  color: #666666;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.faq-contact-cta {
+  display: flex;
+  justify-content: center;
+}
+
+.faq-contact-button {
+  background-color: #28282B;
+  color: #ffffff;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-transform: none;
+  min-width: 120px;
+}
+
+.faq-contact-button:hover {
+  background-color: #1a1a1c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(40, 40, 43, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .faq-title {
+    font-size: 2.5rem;
+  }
+  
+  .faq-subtitle {
+    font-size: 1rem;
+  }
+  
+  .faq-question {
+    padding: 1.25rem 0;
+  }
+  
+  .faq-question-text {
+    font-size: 1rem;
+  }
+  
+  .faq-icon {
+    font-size: 1.25rem;
+  }
+  
+  .faq-contact-prompt {
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+  }
+  
+  .faq-contact-title {
+    font-size: 1.35rem;
+  }
+  
+  .faq-contact-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 3rem 1rem;
+  }
+  
+  .faq-title {
+    font-size: 2rem;
+  }
+  
+  .faq-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .faq-question {
+    padding: 1rem 0;
+  }
+  
+  .faq-question-text {
+    font-size: 0.95rem;
+    padding-right: 1rem;
+  }
+  
+  .faq-answer.expanded {
+    max-height: 250px;
+  }
+  
+  .faq-contact-prompt {
+    margin-top: 2.5rem;
+    padding: 1rem 0;
+  }
+  
+  .faq-contact-title {
+    font-size: 1.25rem;
+  }
+  
+  .faq-contact-text {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq-contact-button {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
+  }
+}

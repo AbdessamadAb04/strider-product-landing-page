@@ -1,0 +1,385 @@
+.overview-section {
+  background-color: #EDEDF2;
+  padding: 6rem 2rem;
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.overview-container {
+  max-width: 1500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Custom spacing for overview headings */
+.overview-headings .headings-upheadline {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #ACABA0;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.overview-headings .headings-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #28282B;
+  margin: 0 0 2.8rem 0;
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.overview-headings .headings-subtitle {
+  margin-bottom: 2rem;
+}
+
+/* Features Grid - Using flexbox with increased spacing */
+.features-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  min-height: 500px;
+}
+
+/* Left column - cards stacked vertically */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+  max-width: 450px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right column - cards stacked vertically */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+  max-width: 450px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Feature Cards */
+.feature-card {
+  background: transparent;
+  border: 1px solid #ACABA0;
+  border-radius: 12px;
+  padding: 1.5rem 1.5rem;
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 12px 30px rgba(0, 0, 0, 0.12),
+    0 0 15px rgba(172, 171, 160, 0.15);
+  border-color: #ACABA0;
+}
+
+.feature-icon {
+  color: #ACABA0;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-icon svg {
+  width: 42px;
+  height: 42px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.feature-title {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #28282B;
+  margin: 0 0 1rem 0;
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 1.2;
+}
+
+.feature-description {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Flexbox Column Layout - Cards positioned in DOM structure */
+
+/* Central Image - Fixed width in flexbox layout */
+.central-image {
+  flex: none;
+  min-width: 800px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overview-specific central image placeholder - unique styling */
+.overview-image-placeholder {
+  width: 730px;
+  height: 500px;
+/* Make the image overflow the smaller frame for visual consistency */
+.overview-image-placeholder img {
+  width: 120%;
+  height: 120%;
+  object-fit: contain;
+  display: block;
+}
+  background: 
+    linear-gradient(135deg, rgba(172, 171, 160, 0.1) 0%, rgba(172, 171, 160, 0.2) 100%),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 15px,
+      rgba(172, 171, 160, 0.05) 15px,
+      rgba(172, 171, 160, 0.05) 16px
+    );
+  border: 2px solid rgba(172, 171, 160, 0.3);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.1),
+    inset 0 1px 2px rgba(255, 255, 255, 0.7);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.overview-image-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(172, 171, 160, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(172, 171, 160, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Keep original image-placeholder for other sections */
+.image-placeholder {
+  width: 600px;
+  height: 420px;
+  background: 
+    linear-gradient(135deg, rgba(172, 171, 160, 0.1) 0%, rgba(172, 171, 160, 0.2) 100%),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 15px,
+      rgba(172, 171, 160, 0.05) 15px,
+      rgba(172, 171, 160, 0.05) 16px
+    );
+  border: 2px solid rgba(172, 171, 160, 0.3);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.1),
+    inset 0 1px 2px rgba(255, 255, 255, 0.7);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.image-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(172, 171, 160, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(172, 171, 160, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.placeholder-content {
+  color: #ACABA0;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.placeholder-content svg {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.tech-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA Section */
+.overview-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .overview-container {
+    max-width: 1000px;
+  }
+  
+  .overview-headings .headings-title {
+    font-size: 2.5rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr 600px 1fr;
+    gap: 2.5rem;
+  }
+  
+  .feature-card {
+    height: 260px;
+    padding: 2rem 1.5rem;
+  }
+  
+  .image-placeholder {
+    width: 580px;
+    height: 520px;
+  }
+}
+
+@media (max-width: 768px) {
+  .overview-section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .overview-headings .headings-title {
+    font-size: 2.5rem;
+  }
+  
+  .overview-headings .headings-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .feature-card {
+    height: auto;
+    padding: 1.5rem 1.5rem;
+  }
+  
+  .central-image {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 1rem 0;
+  }
+  
+  .image-placeholder {
+    width: 320px;
+    height: 350px;
+  }
+  
+  .feature-top-left,
+  .feature-top-right,
+  .feature-bottom-left,
+  .feature-bottom-right {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .overview-section {
+    padding: 3rem 1rem;
+  }
+  
+  .overview-headings .headings-title {
+    font-size: 2rem;
+  }
+  
+  .feature-card {
+    padding: 1.2rem 1rem;
+  }
+  
+  .feature-title {
+    font-size: 1.2rem;
+  }
+  
+  .feature-description {
+    font-size: 0.95rem;
+  }
+  
+  .image-placeholder {
+    width: 280px;
+    height: 300px;
+  }
+}

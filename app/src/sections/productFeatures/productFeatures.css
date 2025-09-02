@@ -1,0 +1,161 @@
+/* Product Features - Based on Overview Section Layout */
+.product-features-container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Features Grid - Horizontal layout for all cards */
+.features-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  min-height: 300px;
+  flex-wrap: wrap;
+}
+
+/* Feature Cards - Optimized for horizontal layout */
+.feature-card {
+  background: transparent;
+  border: 1px solid #ACABA0;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  width: 280px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 12px 30px rgba(0, 0, 0, 0.12),
+    0 0 15px rgba(172, 171, 160, 0.15);
+  border-color: #ACABA0;
+}
+
+.feature-icon {
+  color: #ACABA0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-icon svg {
+  width: 36px;
+  height: 36px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.feature-title {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: #28282B;
+  margin: 0 0 0.8rem 0;
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 1.1;
+}
+
+.feature-description {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.4;
+  margin: 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  max-width: 280px;
+}
+
+/* Flexbox Layout - Cards positioned horizontally */
+
+/* Responsive Design - Horizontal layout adjustments */
+@media (max-width: 1024px) {
+  .features-grid {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    width: 260px;
+    height: 240px;
+    padding: 1.8rem 1.3rem;
+  }
+  
+  .feature-title {
+    font-size: 0.85rem;
+  }
+  
+  .feature-description {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    width: 300px;
+    height: auto;
+    padding: 2rem 1.5rem;
+    max-width: 90%;
+  }
+  
+  .feature-title {
+    font-size: 0.9rem;
+  }
+  
+  .feature-description {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-card {
+    padding: 2rem 1.5rem;
+    width: 280px;
+  }
+  
+  .feature-title {
+    font-size: 0.85rem;
+  }
+  
+  .feature-description {
+    font-size: 0.75rem;
+  }
+}

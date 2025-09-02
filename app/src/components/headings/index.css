@@ -1,0 +1,105 @@
+.headings-container {
+  margin-bottom: 3rem;
+}
+
+.headings-container[data-align="center"] {
+  text-align: center;
+}
+
+.headings-container[data-align="left"] {
+  text-align: left;
+}
+
+.headings-container[data-align="right"] {
+  text-align: right;
+}
+
+.headings-upheadline {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ACABA0;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Heebo', sans-serif;
+}
+
+.headings-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #28282B;
+  margin: 0 0 2.8rem 0;
+  font-family: 'Magistral', sans-serif;
+  line-height: 1.1;
+}
+
+.headings-subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin: 0 auto;
+  max-width: 700px;
+  line-height: 1.6;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+}
+
+/* Left alignment specific styles */
+.headings-container[data-align="left"] .headings-subtitle {
+  margin: 0;
+}
+
+.headings-container[data-align="right"] .headings-subtitle {
+  margin: 0;
+}
+
+/* Size variants */
+.headings-container.large .headings-title {
+  font-size: 3.5rem;
+}
+
+.headings-container.small .headings-title {
+  font-size: 2rem;
+}
+
+.headings-container.small .headings-upheadline {
+  font-size: 1.1rem;
+}
+
+.headings-container.small .headings-subtitle {
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .headings-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headings-title {
+    font-size: 2rem;
+  }
+  
+  .headings-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .headings-upheadline {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .headings-title {
+    font-size: 1.8rem;
+  }
+  
+  .headings-subtitle {
+    font-size: 1rem;
+  }
+  
+  .headings-upheadline {
+    font-size: 1rem;
+  }
+}
