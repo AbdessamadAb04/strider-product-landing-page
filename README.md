@@ -8,11 +8,11 @@ Here's a preview of what the application looks like:
 
 *(Please replace these with your own screenshots)*
 
-![Strider Landing Page](./screenshots/placeholder-home.png)
+![Strider Landing Page](./screenshots/screencapture-localhost-5173-2025-09-01-13_36_54.png)
 
 | About Page | Product Details |
 | :---: | :---: |
-| ![About Page](./screenshots/placeholder-about.png) | ![Product Details](./screenshots/placeholder-product.png) |
+| ![About Page](./screenshots/screencapture-localhost-5173-about-2025-09-01-14_22_24.png) | ![Product Page](./screenshots/screencapture-localhost-5173-product-2025-09-01-14_20_57.png) |
 
 ## ✨ Features
 
